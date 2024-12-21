@@ -1,0 +1,153 @@
+header {
+    position: fixed;
+    top: 5px;
+    width: 100%;
+    color: #fff;
+    background-color: transparent;
+    z-index: 1000;
+    padding: 20px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease-in-out;
+    gap: 150px;
+    justify-self: center;
+    
+  }
+  
+  
+  .logo {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0 0 1em #646cffaa);
+  
+  }
+  
+  .logo:hover {
+    filter: drop-shadow(0 0 2em #646cffaa);
+  }
+  
+  .menu-icon {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 2;
+  }
+  
+  .nav-menu {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-evenly;
+    gap: 60px;
+  }
+  
+  .nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+  }
+  
+  .nav-menu a:hover {
+    color: #fff;
+    text-shadow: -2px 3px 3px rgba(89, 247, 233, 0.18);
+    transform: scaleX(1px);
+    filter: drop-shadow(0 0 1em #e4feff);
+  }
+  
+  header.scrolled {
+    justify-self: center;
+    align-self:center;
+    justify-content: center;
+    margin: 10px 200px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    font-size: 1.3rem;
+    width: 1070px;
+    box-shadow:
+      0 0 0 4px rgba(0, 0, 0, 0.1),
+      inset 0 0 0 3px #EFEFEF,
+      inset 0 0 10px #EFEFEF,
+      0 0 10px rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+    -webkit-backdrop-filter: blur(3px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+   
+  
+  }
+  
+  
+  
+  @media (max-width: 768px) {
+    header {
+      padding: 15px 5px;
+      justify-content: center;
+      align-content: center;
+      gap: 60px;
+    }
+  
+    .logo {
+      width: 50px;
+      height: 50px;
+      
+    }
+    .nav-menu {
+      gap: 20px;
+    }
+    header.scrolled {
+      width: 80%;
+      margin: 10px 15px;
+      padding: 15px 30px;
+      gap: 20px;
+    }
+  }
+  
+  @media (max-width: 420px) {
+    header {
+    
+      justify-self: space-around;
+      align-self: center;
+      gap: 40px;
+      justify-content: space-evenly;
+      align-content: center;
+      margin-left: -50px;
+      margin-right: 90px;
+    }
+  
+    .logo {
+      width: 50px;
+      height: 50px;
+      margin-left: -40px;
+    }
+  
+    .menu-icon {
+      display: block;
+      font-size: 1.7rem;
+      padding: 0 10px;
+    }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 20px 35px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      text-align: left;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+    }
+    header.scrolled {
+      width: 50%;
+      margin: 10px;
+      padding: 15px;
+    }
+  }
+  
+  

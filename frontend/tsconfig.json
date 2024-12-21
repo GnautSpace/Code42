@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "jsx":"react",
+      "allowJs":true,
+       "checkJs":false,
+       "noEmit":true,
+       "target":"es6",
+       "module":"esnext",
+       "strict":true,
+       "moduleResolution":"node",
+       "esModuleInterop":true,
+      "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+      // ...
+    },
+    "include":["src"],
+  }
