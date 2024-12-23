@@ -4,7 +4,7 @@ const { GoogleGenerativeAI } = require('@google/generative-ai');
 require('dotenv').config();
 
 const app = express();
-app.use(cors()); 
+ 
 app.use(cors({
   origin: "https://gspaceportfolio.vercel.app/"
 }));
