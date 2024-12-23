@@ -5,6 +5,10 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors()); 
+app.use(cors({
+  origin: "https://gspaceportfolio.vercel.app/"
+}));
+
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
 
@@ -44,9 +48,9 @@ app.post('/chat', async (req, res) => {
   
   
 });
-const PORT=process.env.PORT||4000;
+const port=process.env.PORT||4000;
 
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+app.listen(port, () => {
+  console.log(`Server running on port ${port}`);
 });
