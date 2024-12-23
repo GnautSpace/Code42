@@ -30,8 +30,8 @@ function MarvinBot() {
           "Content-Type": "application/json",
         },
       };
-
-      const response = await fetch("http://localhost:4000/chat", options);
+      const url=process.env.BACKEND_URL;
+      const response = await fetch(`${url}/chat`, options);
 
       if (!response.ok) {
         throw new Error(`Error: ${response.statusText}`);
