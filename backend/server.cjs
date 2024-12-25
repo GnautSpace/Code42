@@ -6,7 +6,7 @@ require('dotenv').config();
 const app = express();
  
 app.use(cors({
-  origin: "https://gspaceportfolio.vercel.app/"
+  origin: "https://code42-ownw8af16-gspaces-projects.vercel.app"
 }));
 
 const apiKey = process.env.GEMINI_API_KEY;
