@@ -5,9 +5,13 @@ require('dotenv').config();
 
 const app = express();
  
-app.use(cors({
-  origin: "https://code42-ownw8af16-gspaces-projects.vercel.app"
-}));
+const corsOptions = {
+  origin: 'https://gspaceportfolio.vercel.app', 
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, 
+};
+
+app.use(cors(corsOptions));
 
 const apiKey = process.env.GEMINI_API_KEY;
 const genAI = new GoogleGenerativeAI(apiKey);
