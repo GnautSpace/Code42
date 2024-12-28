@@ -59,7 +59,7 @@ header {
     justify-self: center;
     align-self:center;
     justify-content: center;
-    margin: 10px 200px;
+    /*margin: 10px 200px;*/
     background: rgba(255, 255, 255, 0.2);
     border-radius: 25px;
     font-size: 1.3rem;

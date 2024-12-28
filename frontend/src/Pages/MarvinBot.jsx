@@ -10,7 +10,8 @@ function MarvinBot() {
   const [error, setError] = useState("");
   const [chatHistory, setChatHistory] = useState([]);
   const [chatVisible, setChatVisible] = useState(false);
-
+  const [isTyping, setIsTyping] = useState(false);
+  
  {/* const dummyDivRef = useRef(null);*/}
 
   const getResponse = async () => {
@@ -18,7 +19,7 @@ function MarvinBot() {
       setError("Too busy to talk right now!");
       return;
     }
-
+    setIsTyping(true);
     try {
       const options = {
         method: "POST",
@@ -49,6 +50,9 @@ function MarvinBot() {
     } catch (error) {
       console.error(error);
       setError("Too busy to talk right now!");
+    }
+    finally {
+      setIsTyping(false); 
     }
   };
 
@@ -92,6 +96,13 @@ function MarvinBot() {
               ))}
             </div>
             {error && <p>Too busy to talk right now!</p>}
+            {isTyping && (
+              <div className="typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+            )}
             {/*<div ref={dummyDivRef} />*/}
             <div className="input-container">
               <textarea
