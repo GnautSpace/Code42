@@ -84,10 +84,10 @@ header {
   
   @media (max-width: 768px) {
     header {
-      padding: 15px 5px;
+      padding: 15px 10px;
       justify-content: center;
       align-content: center;
-      gap: 60px;
+      gap: 40px;
     }
   
     .logo {
@@ -97,9 +97,10 @@ header {
     }
     .nav-menu {
       gap: 20px;
+      font-size: 1.2rem;
     }
     header.scrolled {
-      width: 75%; 
+      width: 80%; 
       left: 50%; 
       transform: translateX(-50%);
       margin: 0 auto; 
@@ -148,7 +149,7 @@ header {
       display: flex;
     }
     header.scrolled {
-      width: 60%; 
+      width: 75%; 
       left: 50%; 
       transform: translateX(-50%);
       margin: 0 auto; 
