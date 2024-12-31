@@ -111,9 +111,7 @@ function Contact() {
           </section>):(
             <section className="contact-from">
               <p className="form-confirmation">Transmission received. Now I just have to figure out how to stop the Vogon poetry... and then I’ll get back to you!</p>
-              <button onClick={() => window.location.reload()} className="back-to-form-btn">
-    Send Another Message
-  </button>
+              <button onClick={() => window.location.reload()} className="back-to-form-btn">Send Another Message</button>
             </section>
           )}
           <div className="divider"></div>

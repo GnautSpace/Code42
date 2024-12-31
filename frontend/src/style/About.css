@@ -9,7 +9,7 @@
   padding: 25px 20px;
   min-height: 100vh;
   display: flex;
-  margin-top: 30px;
+  margin: 0 auto;
   font-family: "Orbitron", sans-serif;
 }
 
@@ -162,7 +162,7 @@ li {
     justify-content: center;
     align-items: center;
     min-height: 70vh;
-    margin-top: 60px;
+    margin: 0 auto;
     text-align: center;
   }
 
@@ -206,6 +206,62 @@ li {
     margin-top: 160px;
     margin-bottom: -60px;
     margin-left: 310px;
+  }
+
+  .bio h2 {
+    font-size: 1.7rem;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .about {
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .about-p {
+    font-size: 0.8rem;
+    padding: 10px 5px;
+    text-align: left;
+  }
+  .main-content-h {
+    font-size: 2rem;
+  
+  }
+  .merge {
+    margin-top: -70px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .bio {
+    width: 350px;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    
+    padding: 5px 30px;
+    margin-left: -20px;
+  }
+
+  .bio p{
+    font-size: 1rem;
+    text-align: left;
+  }
+  .alien-with-book-img {
+    width: 100px;
+    height: 100px;
+    margin-top: 1rem;
+    margin-left: 15rem;
   }
 
   .bio h2 {

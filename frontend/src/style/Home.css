@@ -8,7 +8,8 @@
   -o-background-size: cover;
   background-size: cover;
   min-height: 100vh;
-  margin-top: -70px;
+ 
+  margin: 0 auto;
   padding-top: 0px;
   color: #d9d9d9;
 }
@@ -161,9 +162,10 @@ p {
     align-items: center;
     min-height: 70vh;
     justify-self: center;
+    margin: 0 auto;
   }
   .home-btn {
-    margin-top: -70px;
+    margin: 0 auto;
     font-size: 1.3em;
     justify-content: center;
     display: flex;
@@ -208,16 +210,17 @@ p {
     justify-content: center;
     align-content: center;
     min-height: 70vh;
-    top: 20px;
+    top: 5px;
+    margin: 0 auto;
   }
   .home-btn {
-    margin-top: -70px;
+    margin: 0 auto;
     font-size: 1.1em;
     justify-self: center;
     display: flex;
     align-self: center;
     gap: 10px;
-    margin-left: -30px;
+   
   }
   .content {
     min-height: 70vh;

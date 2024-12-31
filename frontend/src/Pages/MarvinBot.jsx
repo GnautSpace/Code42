@@ -98,6 +98,7 @@ function MarvinBot() {
             {error && <p>Too busy to talk right now!</p>}
             {isTyping && (
               <div className="typing-indicator">
+                <p>Marvin is typing</p>
                 <span></span>
                 <span></span>
                 <span></span>

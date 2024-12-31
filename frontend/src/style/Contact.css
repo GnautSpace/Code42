@@ -398,8 +398,8 @@ textarea {
   }
 
   .robot-icon {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 80px;
     bottom: 10px;
     right: 10px;
   }
@@ -440,8 +440,9 @@ textarea {
   .form-group input,
   .form-group textarea {
     padding: 10px 15px;
-    width: 90%; 
+    width: 100%; 
     margin: 0 auto; 
+    font-size: 1em;
   }
 
   .divider {
@@ -478,8 +479,8 @@ textarea {
   }
 
   .robot-icon {
-    width: 60px;
-    height: 60px;
+    width: 85px;
+    height: 80px;
     bottom: 15px;
     right: 15px;
   }

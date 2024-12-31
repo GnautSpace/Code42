@@ -224,21 +224,19 @@ h3 {
 
 @media (max-width: 420px) {
   .project-card {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
   }
 
   .project-card:hover {
     transform: scale(1.1);
     border-radius: 25px;
     padding: 10px 30px;
-    width: 150px;
-    height: 200px;
     filter: drop-shadow(0 0 1em #68469ed5);
   }
 
   .project-container {
-    height: 200px;
+    height: 2050px;
     border-radius: 25px;
     padding: 20px;
   }
