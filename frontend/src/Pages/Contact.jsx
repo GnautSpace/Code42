@@ -43,6 +43,7 @@ function Contact() {
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
+          exit={{ opacity: 0, y: -50 }}
           transition={{ ease: "easeOut", duration: 2 }}
           className="main-content-h"
         >
@@ -61,6 +62,7 @@ function Contact() {
                   id="name"
                   name="name"
                   placeholder="Name, traveler?"
+                  aria-label="Name Input"
                   required
                 />
               </div>
@@ -78,6 +80,7 @@ function Contact() {
                   field="email"
                   errors={state.errors}
                 />
+                
               </div>
               <div className="form-group">
                 {/*<label htmlFor="message">Message</label>*/}
@@ -108,7 +111,9 @@ function Contact() {
           </section>):(
             <section className="contact-from">
               <p className="form-confirmation">Transmission received. Now I just have to figure out how to stop the Vogon poetry... and then I’ll get back to you!</p>
-
+              <button onClick={() => window.location.reload()} className="back-to-form-btn">
+    Send Another Message
+  </button>
             </section>
           )}
           <div className="divider"></div>
