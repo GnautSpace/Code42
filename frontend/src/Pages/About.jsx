@@ -90,7 +90,7 @@ function About() {
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
             transition={{ duration: 0.6 }}
-            style={{ fontSize: '1.5rem', padding: '20px' }}
+            style={{ fontSize: '1.3rem', padding: '20px' }}
           >
 
 
@@ -99,7 +99,7 @@ function About() {
             very angry and has been widely regarded as a bad move. But I'm here to
             tell you more about <span className="italic">myself!</span>
             <div className="sub-about-p">
-            Hi, I'm <span className="italic">Gnaut</span>! A space wanderer currently dabbling in React, python and Hacakthon creativity - happy to have you aboard!
+              Hi, I'm <span className="italic">Gnaut</span>! A space wanderer currently dabbling in React, python and Hacakthon creativity - happy to have you aboard!
             </div>
           </motion.p>
         </div>
