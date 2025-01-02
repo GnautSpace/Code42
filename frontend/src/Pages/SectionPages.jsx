@@ -13,14 +13,14 @@ const SectionPage = () => {
       <section id="home">
         <Home />
       </section>
-      <section>
+      <section id="about">
       <About />
       </section>
-      <section>
+      <section id="projects">
       <Projects />
         
       </section>
-      <section>
+      <section id="contact">
         <Contact/>
       </section>
    

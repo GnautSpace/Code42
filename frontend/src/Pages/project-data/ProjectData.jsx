@@ -93,4 +93,28 @@ export const projectsData = {
       liveDemoUrl: "https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-probability-calculator-project/build-a-probability-calculator-project",
     },
   ],
+  hackathonProjects: [
+    {
+      id: 1,
+      title: "Typing Tornado Game",
+      description: "A fast-paced typing game using HTML, CSS, JS, and Devvit webviews, hosted on a subreddit",
+    
+      liveDemoUrl: "https://github.com/GnautSpace/TypingTornado",
+    },
+    {
+      id: 2,
+      title: "Hue and You",
+      description: "Chrome extension enhancing accessibility with color adjustments, Bionic Mode, and Gemini API summaries.",
+     
+      liveDemoUrl: "https://github.com/GnautSpace/hue-and-you",
+    },
+    {
+      id: 3,
+      title: "Incoming...",
+      description: "Incoming...hackathon project",
+     
+      liveDemoUrl: "https://www.freecodecamp.org/learn/scientific-computing-with-python/build-a-time-calculator-project/build-a-time-calculator-project",
+    },
+    
+  ],
 };

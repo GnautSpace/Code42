@@ -5,13 +5,12 @@ import { motion } from "framer-motion";
 import TypingAnimation from "@/components/magicui/typing-animation";
 
 import alien from "../assets/alien-waving.png";
-
+/*import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";*/
 
 function Home() {
   return (
-    
     <div className="home">
-    
       <div className="content">
         <div className="home-txt">
         <TypingAnimation
@@ -33,10 +32,14 @@ function Home() {
        
         <motion.a
           className="cta"
-          href="/projects"
+          
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
           transition={{ ease: "easeInOut", duration: 0.3 }}
+          onClick={() => {
+            const section = document.getElementById("projects");
+            section && section.scrollIntoView({ behavior: "smooth" });
+          }}
         >
           <span>Explore</span>
           
@@ -52,7 +55,8 @@ function Home() {
           transition={{ ease: "easeInOut", duration: 0.3 }}
 
         >
-          Download Resume
+      
+           Download Resume{/*<FontAwesomeIcon icon={faDownload} className="download-icon"/>*/}
         </motion.a>
         
       </div>

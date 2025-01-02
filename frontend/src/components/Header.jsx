@@ -52,17 +52,17 @@ function Header() {
         {isOpen ? <FaTimes /> : <FaBars />}
       </div>
       <nav className={`nav-menu ${isOpen ? "open" : ""}`}>
-        <Link to="/home" onClick={() => handleClick("home")}>
+        <Link to="#home" onClick={() => handleClick("home")}>
           Home
         </Link>
-        <Link to="/about" onClick={() => handleClick("about")}>
+        <Link to="#about" onClick={() => handleClick("about")}>
           About
         </Link>
-        <Link to="/projects" onClick={() => handleClick("projects")}>
+        <Link to="#projects" onClick={() => handleClick("projects")}>
           Projects
         </Link>
 
-        <Link to="/contact" onClick={() => handleClick("contact")}>
+        <Link to="#contact" onClick={() => handleClick("contact")}>
           Contact
         </Link>
       </nav>

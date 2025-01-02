@@ -30,7 +30,25 @@ function Projects() {
       setActiveSection("python");
     }
   };
+  const toggleHackathonProj=()=>{
+    if(activeSection==="hackathon"){
+      setActiveSection(null);
+    }
+    else{
+      setActiveSection("hackathon");
+    }
+  };
 
+/*
+  const toggleActiveSection=(section)=>{
+    if(activeSection===section){
+      setActiveSection(null);
+    }
+    else{
+      setActiveSection(section);
+    }
+  }
+*/
   return (
     <div className="projects-section">
       <motion.h2 ref={ref}
@@ -47,7 +65,7 @@ function Projects() {
           transition={{ ease: "easeInOut", duration: 0.3 }}
           className="btn"
         >
-          {activeSection === "react" ? "Hide" : "Show"}
+          {activeSection === "react" ? "Hide" : "React Orbit"}
         </motion.button>
         <motion.button
           onClick={togglePythonProj}
@@ -56,7 +74,16 @@ function Projects() {
           transition={{ ease: "easeInOut", duration: 0.3 }}
           className="btn"
         >
-          {activeSection === "python" ? "Hide" : "Show"}
+          {activeSection === "python" ? "Hide" : "Python Comet"}
+        </motion.button>
+        <motion.button
+          onClick={toggleHackathonProj}
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          transition={{ ease: "easeInOut", duration: 0.3 }}
+          className="btn"
+        >
+          {activeSection === "hackathon" ? "Hide" : "Hack-a-Moon"}
         </motion.button>
       </div>
       <AnimatePresence>
@@ -83,6 +110,20 @@ function Projects() {
           >
             <h2>Python Projects</h2>
             <ProjectsSlider projects={projectsData.pythonProjects} />
+          </motion.div>
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {activeSection === "hackathon" && (
+          <motion.div
+            initial={{ opacity: 0, y: -50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -50 }}
+            transition={{ ease: "easeInOut" ,duration: 0.5 }}
+            
+          >
+            <h2>Hackathon Projects</h2>
+            <ProjectsSlider projects={projectsData.hackathonProjects} />
           </motion.div>
         )}
       </AnimatePresence>
