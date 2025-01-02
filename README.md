@@ -97,11 +97,11 @@ Now you’ll have both the frontend and backend running locally! 🎉
 ---
 
 
-📬 Contact
+## 📬 Contact
 Got questions, comments, or just wanna say hi? Feel free to reach out at gnaut3@gmail.com.
 
-🌌 Preview
+## 🌌 Preview
 Check out the live version of the portfolio here: [Live Demo](https://gspaceportfolio.vercel.app/)
 
-🌟 P.S. *Don't forget to say hello to Marvin at the bottom corner of the page! Just don't expect him to be cheerful.*
+### 🌟 P.S. *Don't forget to say hello to Marvin at the bottom corner of the page! Just don't expect him to be cheerful.*
 
