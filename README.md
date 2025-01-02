@@ -1,6 +1,4 @@
-# Code42
-
-## 👽 Welcome to My Cosmic React Portfolio 🚀  
+# Code42 - 👽 Welcome to My Cosmic React Portfolio 🚀  
 
 ## What’s This All About?  
 Hey there, interstellar traveler! 🌌 You've landed at my personal portfolio. It’s your gateway to exploring my projects, learning quirky facts about me, and venturing through a galactic journey of my skills and work. Dive in and explore the unknown!  
