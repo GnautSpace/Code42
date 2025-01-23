@@ -96,10 +96,10 @@ function About() {
 
 
             In the beginning, the universe was created. This made a lot of people
-            very angry and has been widely regarded as a bad move. But I'm here to
+            very angry and has been widely regarded as a bad move. But I&apos;m here to
             tell you more about <span className="italic">myself!</span>
             <div className="sub-about-p">
-              Hi, I'm <span className="italic">Gnaut</span>! A space wanderer currently dabbling in React, python and Hacakthon creativity - happy to have you aboard!
+              Hi, I&apos;m <span className="italic">Gnaut</span>! A space wanderer currently dabbling in React, Python and Hackathon creativity - happy to have you aboard!
             </div>
           </motion.p>
         </div>
@@ -113,7 +113,7 @@ function About() {
             className="skills "
           >
            
-            <Skills />
+            <Skills className="skills-cloud"/>
           </motion.div>
           <div className="sub-merge">
 
@@ -142,7 +142,7 @@ function About() {
               animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
               transition={{ ease: "easeOut", duration: 2 }}
             >
-              My tech stack include Java, React, Python, JavaScript, HTML, CSS, SQL, Git etc. Hacakthon participant with experience brainstorming and building projects within tight deadline.
+              My tech stack include Java, React, Python, JavaScript, HTML, CSS, SQL, Git etc. Hackathons participant with experience brainstorming and building projects within tight deadline.
 
             </motion.p>
           </div>

@@ -1,5 +1,3 @@
-import React from "react";
-
 {
   /*}
 const skillsData = [
@@ -96,8 +94,8 @@ const slugs = [
 
 function Skills() {
   return (
-    <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border bg-background px-20 pb-20 pt-8 ">
-      <IconCloud iconSlugs={slugs} className="skills-cloud" />
+    <div className="relative flex h-full w-full max-w-[32rem] items-center justify-center overflow-hidden rounded-lg border px-20 pb-20 pt-8 ">
+      <IconCloud iconSlugs={slugs}/>
     </div>
   );
 }

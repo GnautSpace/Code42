@@ -84,8 +84,8 @@ header {
   
   @media (max-width: 768px) {
     header {
-      padding: 15px 10px;
-      justify-content: center;
+      padding: 1em 3em;
+      justify-content: space-between;
       align-content: center;
       gap: 40px;
       font-size: 1.2rem;
@@ -96,11 +96,39 @@ header {
       height: 50px;
       
     }
-    .nav-menu {
-      gap: 20px;
-      font-size: 1.2rem;
+    .menu-icon {
+      display: block;
+      font-size: 1.7rem;
+      padding: 0 10px;
     }
+  
+    .nav-menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 30px;
+      background: rgba(255, 255, 255, 0.25);
+      padding: 20px 35px;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      text-align: left;
+    }
+  
+    .nav-menu.open {
+      display: flex;
+      gap: 10px;
+    }
+    .nav-menu a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.1rem;
+    }
+
     header.scrolled {
+      justify-content: space-between;
+      padding: 0.7em 2em;
       width: 85%; 
       font-size: 1.2rem;
       left: 50%; 
@@ -113,10 +141,10 @@ header {
   @media (max-width: 420px) {
     header {
     
-      justify-self: space-around;
+      justify-self: space-between;
       align-self: center;
       gap: 40px;
-      justify-content: space-evenly;
+      padding: 1em 2em;
       align-content: center;
       margin: 0 auto;
     }
@@ -152,11 +180,12 @@ header {
     }
     header.scrolled {
       width: 75%; 
+      justify-content: space-between;
       left: 50%; 
       transform: translateX(-50%);
       margin: 0 auto; 
       gap: 7em;
-      padding: 2em 5em;
+      padding: 0.7em 2em;
     }
   }
   

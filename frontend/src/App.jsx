@@ -1,9 +1,10 @@
 import {HashRouter as Router,Routes,Route} from "react-router-dom";
 import './App.css';
 
-import Header from  "./components/Header.jsx";
-import SectionPage from "./Pages/SectionPages.jsx";
-import Footer from "./components/Footer.jsx";
+import Header from  "./components/Header";
+import SectionPage from "./Pages/SectionPages";
+import Achievements from "./Pages/Achievements";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <Router>
         <Header/>
         <Routes>
-          <Route path="/" exact element={<SectionPage/>}/>
+          <Route path="/" element={<SectionPage/>}/>
+          <Route path="/certificates" element={<Achievements/>}/>
         </Routes>
         <Footer/>
       </Router>

@@ -1,4 +1,4 @@
-import { useState, useRef } from "react";
+import { useState } from "react";
 
 import { projectsData } from "./project-data/ProjectData.jsx";
 import ProjectsSlider from "./ProjectsSlider.jsx";
@@ -54,7 +54,6 @@ function Projects() {
       <motion.h2 ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: inView ? 1 : 0, y: inView ? 0 : 50 }}
-          transition={{ duration: 0.6 }}
           className="h2"
           transition={{ ease: "easeOut", duration: 2 }}>PROJECTS<img src={ufo} className="ufo-img" alt="ufo"/></motion.h2>
       <div className="btn-container">

@@ -1,0 +1,134 @@
+.cert-container {
+    text-align: center;
+    padding: 25px 20px;
+    padding-top: 11em;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+    font-family: "Orbitron", sans-serif;
+}
+
+.cert-container h2 {
+    font-family: "Montserrat";
+    background: linear-gradient(to right, #180161, #352187, #4F1787, #EB3678, #FB773C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: -3px 3px 0 rgba(72, 25, 160, 0.349);
+    font-size: 2.5rem;
+    filter: drop-shadow(0 0 1em #646cffcc);
+    text-transform: uppercase;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.cert-container p {
+    font-style: italic;
+    font-size: 1.3em;
+}
+
+.cert-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5em;
+    padding: 2em;
+}
+
+.cert-card {
+    position: relative;
+    text-align: center;
+    background: transparent;
+    padding: 10px;
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.cert-card:hover {
+    transform: translateY(-10px);
+}
+
+.cert-ufo-img {
+    width: 150px;
+    height: auto;
+    animation: ufo-glow 2s infinite alternate;
+    transition: transform 0.5s ease-in-out;
+}
+
+.cert-card:hover .cert-ufo-img {
+    transform: translateY(-20px);
+}
+
+.cert-details {
+    position: absolute;
+    bottom: 0;
+    border: 2px solid;
+    box-shadow: 0px 0 7px 0px rgba(172, 125, 216, 0.7);
+    border-image: linear-gradient(to top, #180161, #352187, #4F1787, rgb(94, 83, 145), rgb(144, 108, 243)) 1;
+    padding: 10px 30px;
+    width: 90%;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 5px;
+    color: #fff;
+    animation: ufo-glow 2s infinite alternate;
+}
+
+.cert-card a {
+    text-decoration: none;
+    text-align: center;
+    filter: drop-shadow(0 0 2em #8064ffc5);
+    background: linear-gradient(to right, #4F1787, #EB3678, #FB773C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cert-card h4 {
+    text-align: center;
+    font-size: 1em;
+}
+
+.cert-card p {
+    text-align: center;
+    filter: drop-shadow(0 0 2em #8064ffc5);
+    background: linear-gradient(to left, #3a1a5a, #7d3ebd, #EB3678, #FB773C);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cert-ufo-img:hover {
+    animation: ufo-hover-glow 2s infinite alternate;
+}
+
+.cert-card:hover .cert-details {
+    opacity: 1;
+}
+
+
+
+@keyframes ufo-glow {
+    from {
+        filter: drop-shadow(0 0 5px #ffffff52);
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px #c083fa42);
+    }
+}
+
+@keyframes ufo-hover-glow {
+    from {
+        filter: drop-shadow(0 0 5px #e85af552);
+    }
+
+    to {
+        filter: drop-shadow(0 0 15px #b832b142);
+    }
+}

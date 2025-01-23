@@ -65,6 +65,9 @@ function Header() {
         <Link to="#contact" onClick={() => handleClick("contact")}>
           Contact
         </Link>
+        <Link to="/certificates" onClick={() => handleClick("certificates")}>
+          Achievements
+        </Link>
       </nav>
 
       {/* <motion.nav animate={isOpen ? "open" : "closed"} variants={menuVariants}>
