@@ -109,7 +109,7 @@ function MarvinBot() {
               <textarea
                 className="chat-input"
                 value={value}
-                placeholder="Go ahead, ask your question... I’m listening (barely)."
+                placeholder="Go ahead, ask your question... I&apos;m listening (barely)."
                 onChange={(e) => setValue(e.target.value)}
                 rows={1}
               />
